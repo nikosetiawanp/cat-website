@@ -87,3 +87,89 @@ ul li a {
     display: none;
   }
 }
+
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+  gap: 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-weight: 700;
+  font-size: 3rem;
+  color: #e2001a;
+}
+
+p {
+  text-align: center;
+  line-height: 1.2rem;
+  color: #878787;
+}
+
+.pesan {
+  height: 50px;
+  width: 233px;
+  border-radius: 2rem;
+  border: 2px solid #e2001a;
+  background: none;
+  color: #e2001a;
+}
+
+.pesan:hover {
+  background-color: #e2001a;
+  color: white;
+  cursor: pointer;
+}
+
+.hero {
+  width: 27rem;
+  height: auto;
+  align-self: center;
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  header {
+    flex-direction: row;
+  }
+  h1,
+  p {
+    text-align: left;
+  }
+  .header-content {
+    align-items: flex-start;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+  header {
+    gap: 5rem;
+    padding: 5rem;
+  }
+  .hero {
+    width: 40rem;
+    height: auto;
+    align-self: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+  p {
+    font-size: 1.3rem;
+    line-height: 1.5rem;
+  }
+}
