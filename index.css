@@ -248,3 +248,62 @@ h3 {
 /* DESKTOP */
 @media only screen and (min-width: 1440px) {
 }
+
+/* CREATE-ARTICLE */
+/* MOBILE */
+.create-article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1rem;
+}
+
+.article-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.kitten {
+  width: 30rem;
+  height: auto;
+  align-self: center;
+}
+
+.baca {
+  height: 50px;
+  width: 233px;
+  border-radius: 2rem;
+  border: 2px solid #e2001a;
+  background: none;
+  color: #e2001a;
+}
+
+.baca:hover {
+  background-color: #e2001a;
+  color: white;
+  cursor: pointer;
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  .create-article {
+    flex-direction: row;
+  }
+  .article-right {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
+  .kitten {
+    width: 50rem;
+    height: auto;
+  }
+}
