@@ -38,7 +38,7 @@ nav {
   flex-direction: column;
   padding: 10px;
   gap: 5px;
-  box-shadow: 0px 1px 20px #888888;
+  box-shadow: 0px 1px 20px rgba(136, 136, 136, 0.5);
 }
 
 ul {
@@ -172,4 +172,79 @@ p {
     font-size: 1.3rem;
     line-height: 1.5rem;
   }
+}
+
+/* MOBILE */
+.product {
+  display: flex;
+  flex-direction: column;
+
+  padding: 1rem;
+  gap: 2rem;
+}
+h2 {
+  font-size: 1.8rem;
+  color: #e2001a;
+  text-align: center;
+  padding: 3rem 1rem 1rem 1rem;
+}
+
+h3 {
+  color: #878787;
+}
+
+.makanan-kering,
+.makanan-basah {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 0.7rem;
+}
+
+.dry,
+.can {
+  width: 18rem;
+  height: auto;
+}
+
+.lihat {
+  height: 50px;
+  width: 233px;
+  border-radius: 2rem;
+  border: 2px solid #e2001a;
+  background: none;
+  color: #e2001a;
+}
+
+.lihat:hover {
+  background-color: #e2001a;
+  color: white;
+  cursor: pointer;
+}
+
+/* TABLET */
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 2.2rem;
+  }
+  .product {
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+  }
+
+  .product p {
+    text-align: center;
+  }
+
+  .makanan-kering,
+  .makanan-basah {
+    width: 50%;
+  }
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1440px) {
 }
